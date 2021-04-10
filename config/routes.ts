@@ -1,4 +1,6 @@
-﻿export default [
+﻿import { TryRouters } from './routes_try';
+export default [
+  TryRouters,
   {
     path: '/user',
     layout: false,
