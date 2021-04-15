@@ -1,6 +1,10 @@
 ﻿import { TryRouters } from "./routes_try";
 import { PageContainer, ProCard, StatisticCard } from "./routes_layout";
+import { ProForm } from "./routes_form";
+import { StepForm } from "./routes_step";
 export default [
+  StepForm,
+  ProForm,
   StatisticCard,
   ProCard,
   PageContainer,
