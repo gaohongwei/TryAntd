@@ -2,7 +2,10 @@
 import { PageContainer, ProCard, StatisticCard } from "./routes_layout";
 import { ProForm } from "./routes_form";
 import { StepForm } from "./routes_step";
+import { ProItem } from "./routes_description";
+
 export default [
+  ProItem,
   StepForm,
   ProForm,
   StatisticCard,
