@@ -12,7 +12,11 @@ const ProCard = {
   path: "/ProCard",
   name: "ProCard",
   icon: "smile",
-  routes: [{ name: "Basic1", path: "./basic1", component: "./ProCard/basic1" }],
+  routes: [
+    { name: "Basic1", path: "./basic1", component: "./ProCard/basic1" },
+    { name: "Layout", path: "./layout", component: "./ProCard/layout" },
+    { name: "Tabs", path: "./tabs", component: "./ProCard/tabs" },
+  ],
 };
 
 const StatisticCard = {
