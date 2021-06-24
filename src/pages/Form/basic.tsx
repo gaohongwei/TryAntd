@@ -9,6 +9,10 @@ const Basic = () => {
     console.log("Failed:", errorInfo);
   };
 
+  const onValuesChange = (values) => {
+    console.log("onValuesChange", values);
+  };
+
   const layout = {
     labelCol: { span: 8 },
     wrapperCol: { span: 8 },
@@ -19,34 +23,36 @@ const Basic = () => {
     span: 16,
   };
   return (
-    <Form
-      layout="inline"
-      {...layout}
-      name="basic"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-      onFinishFailed={onFinishFailed}
-    >
-      <Form.Item label="Username" name="username">
-        <Input />
-      </Form.Item>
+    <div style={{ width: "500px" }}>
+      <Form
+        {...layout}
+        name="basic"
+        initialValues={{
+          remember: true,
+        }}
+        onFinish={onFinish}
+        onFinishFailed={onFinishFailed}
+        onValuesChange={onValuesChange}
+      >
+        <Form.Item label="Username" name="username">
+          <Input />
+        </Form.Item>
 
-      <Form.Item label="Password" name="password">
-        <Input.Password />
-      </Form.Item>
+        <Form.Item label="Password" name="password">
+          <Input.Password />
+        </Form.Item>
 
-      <Form.Item name="remember" valuePropName="checked" wrapperCol={wrapperCol}>
-        <Checkbox>Remember me</Checkbox>
-      </Form.Item>
+        <Form.Item name="remember" valuePropName="checked" wrapperCol={wrapperCol}>
+          <Checkbox>Remember me</Checkbox>
+        </Form.Item>
 
-      <Form.Item wrapperCol={wrapperCol}>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+        <Form.Item wrapperCol={wrapperCol}>
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
   );
 };
 

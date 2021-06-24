@@ -6,7 +6,7 @@ import { FormDependency } from "./formDependency";
 import { FormWei } from "./formWei";
 import { TabPage } from "../common/tab_page";
 import { Summary } from "./allSummary";
-
+import { RadioView, CheckboxView } from "./selectView";
 const Pages = {
   BasicForm,
   LoginForm,
@@ -14,6 +14,8 @@ const Pages = {
   FormLayout,
   FormRef,
   FormDependency,
+  RadioView,
+  CheckboxView,
 };
 
 const IndexPage = () => {
