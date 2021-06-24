@@ -10,7 +10,7 @@ const waitTime = (time: number = 100) => {
   });
 };
 
-export default () => {
+const BasicForm = () => {
   const onFinish = async (values) => {
     await waitTime(2000);
     console.log(values);
@@ -78,3 +78,5 @@ export default () => {
     </ProForm>
   );
 };
+
+export { BasicForm };

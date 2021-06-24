@@ -11,7 +11,7 @@ const waitTime = (time: number = 100) => {
   });
 };
 
-export default () => {
+const LoginForm = () => {
   return (
     <div
       style={{
@@ -105,3 +105,5 @@ export default () => {
     </div>
   );
 };
+
+export { LoginForm };

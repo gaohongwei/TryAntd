@@ -21,8 +21,8 @@ const waitTime = (time: number = 100) => {
   });
 };
 
-export default () => {
-  const [type, setType] = useState("LightFilter");
+const FormLayout = () => {
+  const [type, setType] = useState("ProForm");
   const Components = {
     ProForm,
     ModalForm,
@@ -130,3 +130,5 @@ export default () => {
     </>
   );
 };
+
+export { FormLayout };
