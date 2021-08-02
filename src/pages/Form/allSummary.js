@@ -5,7 +5,7 @@ const Summary = {
     set_value: [
       "set default value with initialValues",
       "setFieldsValue dynamically",
-      "dont use setState",
+      "dont use useState",
     ],
     dependencies: ["Used when there are dependencies between fields"],
     shouldUpdate: [
@@ -16,10 +16,15 @@ const Summary = {
   layout: {
     type: {
       inline: "Put all in the same line",
-      horizontal: "",
-      vertical: "",
+      horizontal: "label and data in the one line",
+      vertical: "label and data in the two line",
     },
-    wrapperCol: ["控制input布局", "input controls", "same as with <Col>", "Form or item level"],
+    wrapperCol: [
+      "控制button,input(checkbox, radiobutton)布局",
+      "input controls",
+      "same as with <Col>",
+      "Form or item level",
+    ],
 
     labelCol: [
       "控制label布局",
@@ -29,6 +34,11 @@ const Summary = {
       "Form or item level",
     ],
   },
+  select: {
+    TreeSelect: "TreeSelect",
+    Cascader: "Cascader",
+  },
+  input: ["InputNumber", "Switch"],
 };
 
 export { Summary };

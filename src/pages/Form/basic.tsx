@@ -1,5 +1,19 @@
 import { Form, Input, Button, Checkbox } from "antd";
 
+const layout = {
+  labelCol: { span: 8 },
+  wrapperCol: { span: 8 },
+};
+
+const wrapperCol = {
+  offset: 8,
+  span: 16,
+};
+
+const formStyle = { width: "500px" };
+
+const rules = [{ required: true, message: "Please input data!" }];
+
 const Basic = () => {
   const onFinish = (values) => {
     console.log("Success:", values);
@@ -13,17 +27,8 @@ const Basic = () => {
     console.log("onValuesChange", values);
   };
 
-  const layout = {
-    labelCol: { span: 8 },
-    wrapperCol: { span: 8 },
-  };
-
-  const wrapperCol = {
-    offset: 8,
-    span: 16,
-  };
   return (
-    <div style={{ width: "500px" }}>
+    <div style={formStyle}>
       <Form
         {...layout}
         name="basic"
@@ -34,7 +39,7 @@ const Basic = () => {
         onFinishFailed={onFinishFailed}
         onValuesChange={onValuesChange}
       >
-        <Form.Item label="Username" name="username">
+        <Form.Item label="Username" name="username" rules={rules}>
           <Input />
         </Form.Item>
 
@@ -44,6 +49,7 @@ const Basic = () => {
 
         <Form.Item name="remember" valuePropName="checked" wrapperCol={wrapperCol}>
           <Checkbox>Remember me</Checkbox>
+          <Checkbox>Remember you</Checkbox>
         </Form.Item>
 
         <Form.Item wrapperCol={wrapperCol}>
