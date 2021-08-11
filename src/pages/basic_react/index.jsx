@@ -1,9 +1,14 @@
 import { Tabs } from "antd";
-import { InfiniteLoading } from "./InfiniteLoading";
-import { CommonTabs } from "../common/CommonTabs";
+import { CommonTabs } from "COM/CommonTabs";
 import "./styles.css";
+import { InfiniteLoading } from "./InfiniteLoading";
+import { CssPage } from "./CssPage";
 
 const tabConfig = [
+  {
+    name: "CssPage",
+    child: <CssPage />,
+  },
   {
     name: "InfiniteLoading",
     child: <InfiniteLoading />,
