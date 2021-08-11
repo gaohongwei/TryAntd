@@ -14,6 +14,11 @@ export default [
   PageContainer,
   TryRouters,
   {
+    path: "/basic",
+    name: "BasicReact",
+    component: "./basic_react",
+  },
+  {
     path: "/user",
     layout: false,
     routes: [
