@@ -3,15 +3,24 @@ import { CommonTabs } from "COM/CommonTabs";
 import "./styles.css";
 import { InfiniteLoading } from "./InfiniteLoading";
 import { CssPage } from "./CssPage";
-
+import { DemoPage } from "./Demo";
+import { CountryPage } from "./CountryPage";
 const tabConfig = [
+  // {
+  //   name: "CssPage",
+  //   child: <CssPage />,
+  // },
+  // {
+  //   name: "InfiniteLoading",
+  //   child: <InfiniteLoading />,
+  // },
   {
-    name: "CssPage",
-    child: <CssPage />,
+    name: "CountryPage",
+    child: <CountryPage />,
   },
   {
-    name: "InfiniteLoading",
-    child: <InfiniteLoading />,
+    name: "DemoPage",
+    child: <DemoPage />,
   },
 ];
 
